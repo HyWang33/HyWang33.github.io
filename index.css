@@ -32,3 +32,51 @@
     padding: 0 16px;
   }
 }
+
+
+.sidebar {
+  width: 180px;
+  color: #fff;
+  transition: all 0.3s;
+  position: fixed;
+  left: 0;
+  top: 200px;
+  &:hover > .sidebar-content {
+    display: block;
+  }
+}
+
+.sidebar.collapsed {
+  width: 50px;
+  overflow: hidden;
+}
+
+.toggle-btn {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: block;
+  width: 130px;
+  transform: rotate(90deg) translateY(44px);
+  &:hover + .sidebar-content{
+    display: block;
+  }
+}
+
+.sidebar-content {
+  display: none;
+  transition: all 3.3s;
+  background: #333;
+  transform: translateY(-22px);
+  .sidebar-item {
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      background: rgb(168, 213, 252);
+    }
+  }
+}
