@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+      font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+      font-size: 12px;
+  }
+} */
+
+body {
+  padding-top: 4rem;
+}
+
+input {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 4px;
+  /* font-size: 14px; */
+  /* line-height: 1rem; */
+  list-style: none;
+  display: inline-block;
+  border-radius: 0.3rem;
+  transition: all 0.2;
+  /* border-color: #D9D9D9; */
+  color: rgba(0, 0, 0, 0.88);
+  position: relative;
+  text-overflow: ellipsis;
+  /* border-style: solid; */
+  border: 1px #D9D9D9 solid;
+}
+input:focus {
+  border-color: #1677ff;
+  box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
+  outline: 0;
+  background-color: #FFF;
+}
+
+input:disabled {
+  background: rgba(118, 118, 118, 0.4);
+  cursor: not-allowed !important;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.progress-bar {
+  width: calc(100% - 220px);
+  height: 10px;
+  background-color: #6A6A6A;
+  border-radius: 10px;
+  cursor: pointer;
+  /* margin-left: 0.5rem; */
+}
+
+.progress {
+  height: 100%;
+  background-color: rgb(12, 106, 255);
+  border-radius: 10px;
+  position: relative;
+  width: 0;
+}
+.progress-handle {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #FFF;
+  display: block;
+  border:4px rgb(12, 106, 255) solid;
+
+}
+
+
+
+.title {
+  text-align: center;
+}
+
+.calc-wrapper {
+  margin: 2rem auto;
+  border: 2px #999 solid;
+  border-radius: 2px;
+  padding: 2rem;
+  width: 700px;
+}
+
+@media screen and (max-width: 480px) {
+  .calc-wrapper {
+    width: 100%;
+    padding: 2rem 0.5rem;
+  }
+} 
+
+.form-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+  .calc-label {
+    width: 9rem;
+    text-align: right;
+    margin-right: 1rem;
+  }
+  .calc-inp {
+    width: calc(100% - 220px);
+    /* margin-left: 0.5rem; */
+  }
+  .tip-per-txt {
+    position: absolute;
+    left: 10rem;
+    margin-top: 2.2rem;
+  }
+}
+
+.total-tip-text {
+  position: absolute;
+  left: 10rem;
+  margin-top: 2.5rem;
+  font-size: 12px;
+  color: red;
+  display: none;
+}
