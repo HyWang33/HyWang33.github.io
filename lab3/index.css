@@ -124,6 +124,7 @@ input:disabled {
 
 .calc-inp {
   width: calc(100% - 220px);
+  display: block;
   /* margin-left: 0.5rem; */
 }
 
