@@ -112,20 +112,25 @@ input:disabled {
   align-items: center;
   margin-bottom: 1.5rem;
   position: relative;
-  .calc-label {
-    width: 9rem;
-    text-align: right;
-    margin-right: 1rem;
-  }
-  .calc-inp {
-    width: calc(100% - 220px);
-    /* margin-left: 0.5rem; */
-  }
-  .tip-per-txt {
-    position: absolute;
-    left: 10rem;
-    margin-top: 2.2rem;
-  }
+  
+}
+
+.calc-label {
+  width: 9rem;
+  text-align: right;
+  margin-right: 1rem;
+  display: block;
+}
+
+.calc-inp {
+  width: calc(100% - 220px);
+  /* margin-left: 0.5rem; */
+}
+
+.tip-per-txt {
+  position: absolute;
+  left: 10rem;
+  margin-top: 2.2rem;
 }
 
 .total-tip-text {

@@ -104,6 +104,15 @@ window.onload = () => {
       billResInp.value =  "";
   }
 
+  // setRem()
+  // window.addEventListener('resize', () => {
+  //   setRem();
+  // });
+
+  function setRem() {
+    const screenWidth = document.documentElement.clientWidth || 375;
+    document.getElementsByTagName('html')[0].style.fontSize = `${screenWidth / 10}px`;
+  }
 }
 
 
