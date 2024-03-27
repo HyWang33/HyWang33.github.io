@@ -116,6 +116,13 @@ input:disabled {
   }
 } 
 
+@media screen and (max-width: 400px) {
+  .total-tip-text {
+    width: 220px;
+    left: 100px !important;
+  }
+}
+
 .form-item {
   display: flex;
   align-items: center;
