@@ -27,7 +27,7 @@ body {
 input {
   box-sizing: border-box;
   margin: 0;
-  padding: 4px;
+  padding: 4px 10px;
   /* font-size: 14px; */
   /* line-height: 1rem; */
   list-style: none;
@@ -51,6 +51,10 @@ input:focus {
 input:disabled {
   background: rgba(118, 118, 118, 0.4);
   cursor: not-allowed !important;
+  color: #000 !important;
+  -webkit-text-fill-color: #000;
+  -webkit-opacity: 1;
+  opacity: 1;
 }
 
 .txt-center {
@@ -87,44 +91,54 @@ input:disabled {
 }
 
 
-
-.title {
+.calc-name {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.calc-title {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .calc-wrapper {
   margin: 2rem auto;
   border: 2px #999 solid;
-  border-radius: 2px;
-  padding: 2rem;
-  width: 700px;
+  border-radius: 4px;
+  padding: 2rem 1rem;
+  width: 500px;
+  background: rgb(224, 232, 246);
 }
 
 @media screen and (max-width: 480px) {
   .calc-wrapper {
     width: 100%;
-    padding: 2rem 0.5rem;
+    padding: 2rem 0;
   }
 } 
 
 .form-item {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 1.5rem;
   position: relative;
   
 }
 
 .calc-label {
-  width: 9rem;
+  width: 154px;
   text-align: right;
-  margin-right: 1rem;
+  margin-right: 20px;
+  margin-left: -20px;
   display: block;
+  font-size: 18px;
 }
 
 .calc-inp {
   width: calc(100% - 220px);
   display: block;
+  height: 40px;
+  font-size: 20px;
   /* margin-left: 0.5rem; */
 }
 
@@ -137,8 +151,8 @@ input:disabled {
 .total-tip-text {
   position: absolute;
   left: 10rem;
-  margin-top: 2.5rem;
-  font-size: 12px;
+  margin-top: 3.8rem;
+  font-size: 14px;
   color: red;
   display: none;
 }

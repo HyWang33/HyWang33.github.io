@@ -10,10 +10,10 @@
 
   </head>
   <body>
-    <p class="txt-center">ITMD 4/541 - Lab3 - Hongyang Wang</p>
-    <h1 class="title">Tip Calculator</h1>
-
+    
     <div class="calc-wrapper">
+      <p class="txt-center calc-name">ITMD 4/541 - Lab3 - Hongyang Wang</p>
+      <h1 class="calc-title">Tip Calculator</h1>
       <div class="form-item">
         <span class="calc-label">Bill Total: </span>
         <input class="calc-inp" id="billTotalInp" onchange="onTotalChange()" />
@@ -31,7 +31,7 @@
       </div>
       <div class="form-item">
         <span class="calc-label">Tip Percentage: </span>
-        <input class="calc-inp" id="tipPerInp" disabled />
+        <input class="calc-inp" id="tipPerInp" disabled value="0%" />
       </div>
       <div class="form-item">
         <span class="calc-label">Tip Amount: </span>
