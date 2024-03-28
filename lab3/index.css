@@ -68,6 +68,12 @@ input:disabled {
   border-radius: 10px;
   cursor: pointer;
   /* margin-left: 0.5rem; */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .progress {
@@ -102,7 +108,7 @@ input:disabled {
 }
 
 .calc-wrapper {
-  margin: 2rem auto;
+  margin: 0 auto 2rem;
   border: 2px #999 solid;
   border-radius: 8px;
   padding: 2rem 1rem;
@@ -115,6 +121,7 @@ input:disabled {
   .calc-wrapper {
     width: 100%;
     padding: 2rem 0;
+    /* margin-top: 30px; */
   }
 } 
 
@@ -124,6 +131,7 @@ input:disabled {
     left: 120px !important;
   }
 }
+
 
 .form-item {
   display: flex;
@@ -161,7 +169,7 @@ input:disabled {
 .total-tip-text {
   position: absolute;
   left: 190px;
-  margin-top: 3.8rem;
+  bottom: -22px;
   font-size: 16px;
   color: red;
   font-weight: 600;
