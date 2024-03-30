@@ -11,17 +11,17 @@
   </head>
   <body>
     
-    <div class="calc-wrapper">
+    <form class="calc-wrapper">
       <p class="txt-center calc-name">ITMD 4/541 - Lab3 - Hongyang Wang</p>
       <h1 class="calc-title">Tip Calculator</h1>
       <div class="form-item">
-        <span class="calc-label">Bill Total: </span>
+        <label class="calc-label">Bill Total: </label>
         <input class="calc-inp" id="billTotalInp" onchange="onTotalChange()" />
-        <span class="total-tip-text" id="totalTipText">Only numbers are allowed.</span>
-        <span class="total-tip-text" id="totalTipDecimal">Up to two decimal places.</span>
+        <label class="total-tip-text" id="totalTipText">Only numbers are allowed.</label>
+        <label class="total-tip-text" id="totalTipDecimal">Up to two decimal places.</label>
       </div>
       <div class="form-item">
-        <span class="calc-label">Tip: </span>
+        <label class="calc-label">Tip: </label>
         <div class="progress-bar" id="progress-bar">
           <div class="progress" id="progress">
             <span class="progress-handle"></span>
@@ -30,15 +30,15 @@
         <!-- <div class="tip-per-txt" id="tipPer">0%</div> -->
       </div>
       <div class="form-item">
-        <span class="calc-label">Tip Percentage: </span>
+        <label class="calc-label">Tip Percentage: </label>
         <input class="calc-inp" id="tipPerInp" disabled value="0%" />
       </div>
       <div class="form-item">
-        <span class="calc-label">Tip Amount: </span>
+        <label class="calc-label">Tip Amount: </label>
         <input class="calc-inp" id="tipAmountInp" disabled />
       </div>
       <div class="form-item">
-        <span class="calc-label">Total Bill with Tip: </span>
+        <label class="calc-label">Total Bill with Tip: </label>
         <input class="calc-inp" id="billResInp" disabled />
       </div>
     </div>
