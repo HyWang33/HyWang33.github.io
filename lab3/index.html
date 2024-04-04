@@ -16,17 +16,18 @@
       <h1 class="calc-title">Tip Calculator</h1>
       <div class="form-item">
         <label class="calc-label">Bill Total: </label>
-        <input class="calc-inp" id="billTotalInp" onchange="onTotalChange()" />
+        <input class="calc-inp" id="billTotalInp" />
         <label class="total-tip-text" id="totalTipText">Only numbers are allowed.</label>
         <label class="total-tip-text" id="totalTipDecimal">Up to two decimal places.</label>
       </div>
       <div class="form-item">
         <label class="calc-label">Tip: </label>
-        <div class="progress-bar" id="progress-bar">
+        <input class="calc-inp tip-slider" type="range" min="0" max="100" id="tipSlider" value="0" />
+        <!-- <div class="progress-bar" id="progress-bar">
           <div class="progress" id="progress">
             <span class="progress-handle"></span>
           </div>
-        </div>
+        </div> -->
         <!-- <div class="tip-per-txt" id="tipPer">0%</div> -->
       </div>
       <div class="form-item">

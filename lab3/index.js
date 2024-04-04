@@ -11,37 +11,37 @@ window.onload = () => {
 
   let isDragging = false;
 
-  progressBar.addEventListener('mousedown', (e) => {
-    isDragging = true;
-    updateProgress(e.pageX);
-  });
+  // progressBar.addEventListener('mousedown', (e) => {
+  //   isDragging = true;
+  //   updateProgress(e.pageX);
+  // });
 
-  document.addEventListener('mousemove', (e) => {
-    if (isDragging) {
-      updateProgress(e.pageX);
-    }
-  });
+  // document.addEventListener('mousemove', (e) => {
+  //   if (isDragging) {
+  //     updateProgress(e.pageX);
+  //   }
+  // });
 
-  document.addEventListener('mouseup', () => {
-    isDragging = false;
-  });
+  // document.addEventListener('mouseup', () => {
+  //   isDragging = false;
+  // });
 
-  progressBar.addEventListener('touchstart', (e) => {
-    isDragging = true;
-    updateProgress(e.touches[0].clientX);
-  });
+  // progressBar.addEventListener('touchstart', (e) => {
+  //   isDragging = true;
+  //   updateProgress(e.touches[0].clientX);
+  // });
   
-  document.addEventListener('touchmove', (e) => {
-    e.preventDefault();
-    if (isDragging) {
-      e.preventDefault();
-      updateProgress(e.touches[0].clientX);
-    }
-  }, { passive: false });
+  // document.addEventListener('touchmove', (e) => {
+  //   e.preventDefault();
+  //   if (isDragging) {
+  //     e.preventDefault();
+  //     updateProgress(e.touches[0].clientX);
+  //   }
+  // }, { passive: false });
   
-  document.addEventListener('touchend', () => {
-    isDragging = false;
-  });
+  // document.addEventListener('touchend', () => {
+  //   isDragging = false;
+  // });
 
   function updateProgress(x) {
     const progressBarRect = progressBar.getBoundingClientRect();
@@ -103,6 +103,29 @@ window.onload = () => {
     tipAmountInp.value = "";
       billResInp.value =  "";
   }
+
+  const tipSliderInp = document.getElementById("tipSlider");
+  // change to use input with type range although prefer to implement it with other elements
+
+  tipSliderInp.addEventListener("input", () => {
+    tipPercent = tipSliderInp.value;
+    
+    // progress.style.width = percentage + '%';
+      // tipPercent = Math.round(percentage);
+      console.log('tipPercent', tipPercent);
+      // const tipPerDom = document.getElementById("tipPer");
+      // tipPerDom.innerHTML = `${tipPercent}%`;
+      tipPerInp.value = `${tipPercent}%`;
+      
+      calcInp()
+  })
+
+  // tipSliderInp.addEventListener('touchstart', (e) => {
+  //   const min = 100 / this.clientWidth;
+  //   const x = this.getBoundingClientRect().left;
+  //   this.value = min * (e.touches[0].pageX - x);
+  //   this.style.webkitBackgroundSize = this.value + "% 100%";
+  // })
 
   // setRem()
   // window.addEventListener('resize', () => {
